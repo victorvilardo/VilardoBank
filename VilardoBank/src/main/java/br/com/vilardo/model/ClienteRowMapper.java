@@ -1,4 +1,4 @@
-package br.com.vilardo.bank.cliente.model;
+package br.com.vilardo.model;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -21,7 +21,6 @@ public class ClienteRowMapper implements RowMapper<Cliente>{
 		cliente.setId(rs.getInt("id"));
 		cliente.setNome(rs.getString("nome"));
 		cliente.setCpf(rs.getString("cpf"));
-		cliente.setUsuario(rs.getString("usuario"));
 		cliente.setSaldo(rs.getDouble("saldo"));
 		cliente.setAgencia(rs.getInt("agencia"));
 		cliente.setConta(rs.getInt("conta"));

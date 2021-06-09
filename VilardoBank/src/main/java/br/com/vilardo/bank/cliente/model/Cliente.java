@@ -1,4 +1,4 @@
-package br.com.vilardo.model;
+package br.com.vilardo.bank.cliente.model;
 
 public class Cliente {
 
@@ -9,6 +9,7 @@ public class Cliente {
 	private Integer id;
 	private String nome;
 	private String cpf;
+	private String usuario;
 	private Double saldo;
 	private Integer conta;
 	private Integer agencia;
@@ -17,6 +18,12 @@ public class Cliente {
 	
 	
 	
+	public String getUsuario() {
+		return usuario;
+	}
+	public void setUsuario(String usuario) {
+		this.usuario = usuario;
+	}
 	public Integer getId() {
 		return id;
 	}
